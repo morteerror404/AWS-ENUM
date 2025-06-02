@@ -1,0 +1,17 @@
+ami-id
+ami-launch-index
+ami-manifest-path
+hostname
+instance-action
+instance-id
+instance-life-cycle
+instance-type
+local-hostname
+local-ipv4
+mac
+profile
+public-hostname
+public-ipv4
+reservation-id
+security-groups
+system!
