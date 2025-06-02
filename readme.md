@@ -12,43 +12,43 @@ http://169.254.169.254/latest/meta-data/
 
 ```
 metadata/
-├── ami-id                             # ID da AMI da instância
-├── ami-launch-index                   # Índice no grupo de lançamento
-├── ami-manifest-path                  # Caminho do manifesto da AMI
-├── ancestor-ami-ids                   # AMIs ancestrais (se derivada)
-├── hostname                           # Hostname privado (DNS)
-├── instance-action                    # Ação agendada (stop/terminate)
-├── instance-id                        # ID da instância
-├── instance-life-cycle                # "on-demand" ou "spot"
-├── instance-type                      # Tipo (ex: t2.micro)
-├── local-hostname                     # Hostname local
-├── local-ipv4                         # IPv4 privado
-├── mac                                # MAC da interface primária
-├── profile                            # Perfil (ex: default-hvm)
-├── public-hostname                    # Hostname público (se houver)
-├── public-ipv4                        # IPv4 público (se houver)
-├── reservation-id                     # ID da reserva
+├── ami-id                                              # ID da AMI da instância
+├── ami-launch-index                                    # Índice no grupo de lançamento
+├── ami-manifest-path                                   # Caminho do manifesto da AMI
+├── ancestor-ami-ids                                    # AMIs ancestrais (se derivada)
+├── hostname                                            # Hostname privado (DNS)
+├── instance-action                                     # Ação agendada (stop/terminate)
+├── instance-id                                         # ID da instância
+├── instance-life-cycle                                 # "on-demand" ou "spot"
+├── instance-type                                       # Tipo (ex: t2.micro)
+├── local-hostname                                      # Hostname local
+├── local-ipv4                                          # IPv4 privado
+├── mac                                                 # MAC da interface primária
+├── profile                                             # Perfil (ex: default-hvm)
+├── public-hostname                                     # Hostname público (se houver)
+├── public-ipv4                                         # IPv4 público (se houver)
+├── reservation-id                                      # ID da reserva
 │
-├── network/                           # Dados de rede
+├── network/                                            # Dados de rede
 │   └── interfaces/
 │       └── macs/
-│           └── [MAC_ADDRESS]/         # MAC da interface
-│               ├── device-number       # Número do dispositivo
-│               ├── interface-id        # ID da interface
-│               ├── ipv4-associations/  # IPs públicos associados
-│               │   └── [PUBLIC_IPV4]   # IPv4 específico
-│               ├── local-hostname      # Hostname local
-│               ├── local-ipv4s         # IPv4s privados
-│               ├── mac                 # Endereço MAC
-│               ├── owner-id            # ID do proprietário
-│               ├── public-hostname     # Hostname público
-│               ├── public-ipv4s        # IPv4s públicos
-│               ├── security-group-ids  # IDs dos Security Groups
-│               ├── security-groups     # Nomes dos Security Groups
-│               ├── subnet-id           # ID da subnet
-│               ├── subnet-ipv4-cidr-block  # Bloco CIDR da subnet
-│               ├── vpc-id              # ID da VPC
-│               └── vpc-ipv4-cidr-block # Bloco CIDR da VPC
+│           └── [MAC_ADDRESS]/                          # MAC da interface
+│               ├── device-number                       # Número do dispositivo
+│               ├── interface-id                        # ID da interface
+│               ├── ipv4-associations/                  # IPs públicos associados
+│               │   └── [PUBLIC_IPV4]                   # IPv4 específico
+│               ├── local-hostname                      # Hostname local
+│               ├── local-ipv4s                         # IPv4s privados
+│               ├── mac                                 # Endereço MAC
+│               ├── owner-id                            # ID do proprietário
+│               ├── public-hostname                     # Hostname público
+│               ├── public-ipv4s                        # IPv4s públicos
+│               ├── security-group-ids                  # IDs dos Security Groups
+│               ├── security-groups                     # Nomes dos Security Groups
+│               ├── subnet-id                           # ID da subnet
+│               ├── subnet-ipv4-cidr-block              # Bloco CIDR da subnet
+│               ├── vpc-id                              # ID da VPC
+│               └── vpc-ipv4-cidr-block                 # Bloco CIDR da VPC
 │
 ├── iam/                               # Dados do IAM
 │   ├── info                           # Informações da IAM Role
