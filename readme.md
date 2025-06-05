@@ -50,43 +50,43 @@ metadata/
 │               ├── vpc-id                              # ID da VPC
 │               └── vpc-ipv4-cidr-block                 # Bloco CIDR da VPC
 │
-├── iam/                               # Dados do IAM
-│   ├── info                           # Informações da IAM Role
-│   └── security-credentials/          # Credenciais temporárias
-│       └── [ROLE_NAME]                # Nome da IAM Role
+├── iam/                                                # Dados do IAM
+│   ├── info                                            # Informações da IAM Role
+│   └── security-credentials/                           # Credenciais temporárias
+│       └── [ROLE_NAME]                                 # Nome da IAM Role
 │
-├── user-data                          # User Data (base64)
+├── user-data                                           # User Data (base64)
 │
-├── hibernation/                       # Config de hibernação
-│   └── configured                     # "true" ou "false"
+├── hibernation/                                        # Config de hibernação
+│   └── configured                                      # "true" ou "false"
 │
-├── spot/                              # Spot Instance
-│   ├── instance-action                # Ação (terminate, stop)
-│   └── termination-time               # Horário de término
+├── spot/                                               # Spot Instance
+│   ├── instance-action                                 # Ação (terminate, stop)
+│   └── termination-time                                # Horário de término
 │
-├── dynamic/                           # Metadados dinâmicos (IMDSv2)
+├── dynamic/                                            # Metadados dinâmicos (IMDSv2)
 │   └── instance-identity/
-│       ├── document                   # JSON com metadados
-│       ├── pkcs7                      # Assinatura PKCS7
-│       └── signature                  # Assinatura
+│       ├── document                                    # JSON com metadados
+│       ├── pkcs7                                       # Assinatura PKCS7
+│       └── signature                                   # Assinatura
 │
-├── elastic-gpus/                      # Elastic GPUs
+├── elastic-gpus/                                       # Elastic GPUs
 │   └── associations/
-│       └── elastic-gpu-id             # ID do Elastic GPU
+│       └── elastic-gpu-id                              # ID do Elastic GPU
 │
-├── elastic-inference/                 # Elastic Inference
+├── elastic-inference/                                  # Elastic Inference
 │   └── associations/
-│       └── eia-id                     # ID do acelerador
+│       └── eia-id                                      # ID do acelerador
 │
-├── placement/                         # Placement Group e AZ
-│   ├── group-name                     # Nome do placement group
-│   ├── availability-zone              # Zona de disponibilidade
-│   └── region                         # Região AWS
+├── placement/                                          # Placement Group e AZ
+│   ├── group-name                                      # Nome do placement group
+│   ├── availability-zone                               # Zona de disponibilidade
+│   └── region                                          # Região AWS
 │
-└── tags/                              # Tags (IMDSv2 apenas)
-    ├── instance                       # Todas as tags
+└── tags/                                               # Tags (IMDSv2 apenas)
+    ├── instance                                        # Todas as tags
     └── instance/
-        └── [TAG_KEY]                  # Valor de uma tag específica
+        └── [TAG_KEY]                                   # Valor de uma tag específica
 ```
 
 ## 🔍 Como Usar  
