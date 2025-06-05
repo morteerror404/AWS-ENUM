@@ -43,4 +43,4 @@ metadata/placement/group-name
 metadata/placement/availability-zone
 metadata/placement/region
 metadata/tags/instance
-metadata/tags/instance/[TAG_KEY]
+metadata/tags/instance/

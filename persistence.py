@@ -1,14 +1,13 @@
-import os
 import requests
 
-# Proper path formatting (raw string or double backslashes)
+# Caminho correto para as credenciais AWS (usando raw string)
 aws_credentials_path = r"C:\users\frota\home\.aws\credentials"
 
-url = input("Enter the URL to make a curl request: ")
+url = input("Digite a URL para fazer a requisição: ")
 
-# Example of making a request (without exposing credentials)
+# Fazendo a requisição com tratamento de erros adequado
 try:
     response = requests.get(url)
     print(response.text)
-except requests.RequestException as e:""
-    print(f"Error making request: {e}")
+except requests.RequestException as e:
+    print(f"Erro na requisição: {e}")
