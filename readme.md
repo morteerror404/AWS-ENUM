@@ -111,6 +111,22 @@ metadata/
    curl http://169.254.169.254/latest/dynamic/instance-identity/document
    ```
 
+5. **Conexão - Linux**
+   ```sh
+   export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+   ```
+   ```sh 
+   export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+   ```
+   ```sh
+   export AWS_SESSION_TOKEN=<AWS_SESSION_TOKEN>
+   ```
+   ```sh
+   aws sts get-caller-identity
+   ```
+
+
+
 ## ⚠️ Segurança  
 - **IMDSv1 vs. IMDSv2**:  
   - IMDSv2 (mais seguro) exige tokens de sessão.  
