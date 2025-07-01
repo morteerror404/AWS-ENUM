@@ -124,8 +124,29 @@ metadata/
    ```sh
    aws sts get-caller-identity
    ```
+6. **Conexão - Windows**
+   ```sh
+   SET AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+   ```
+   ```sh
+   SET AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+   ```
+   ```sh
+   SET AWS_SESSION_TOKEN=<AWS_SESSION_TOKEN>
+   ```
 
+7. **Comandos úteis**
+   
+   Enumeração local via CLI
+   
+   ```sh
+   aws ssm start-session --target <SessionID>
+   ```
+   ```sh
+   aws s3 ls s3://nome-do-seu-bucket/caminho/do/diretorio/
+   ```
 
+   
 
 ## ⚠️ Segurança  
 - **IMDSv1 vs. IMDSv2**:  
